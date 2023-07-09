@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "hanseul-lee",
-    image: "/mimoji.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/images/mimoji.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "frontend developer",
     bio: "💻 + ☕️",
     email: "hanseul.dev@gmail.com",
@@ -24,12 +24,12 @@ const CONFIG = {
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-7dsjlrbs6-hanseul-lee.vercel.app/",
-  since: 2023, // If leave this empty, current year will be used.
+  link: "https://dali-dev.vercel.app/",
+  since: "", // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ["Blog", "Website", "Notion"],
+    keywords: ["Blog", "Frontend", "Developer"],
   },
 
   // notion configuration (required)

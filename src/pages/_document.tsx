@@ -11,7 +11,7 @@ class MyDocument extends Document {
             as="font"
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/images/mimoji.png" />
           <link
             rel="apple-touch-icon"
             sizes="192x192"
@@ -36,7 +36,7 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <body className="bg-slate-100 dark:bg-black">
+        <body className="bg-stone-100 dark:bg-black">
           <Main />
           <NextScript />
         </body>

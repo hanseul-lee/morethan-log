@@ -17,13 +17,6 @@ type Props = {
 const Feed: React.FC<Props> = ({ categories, tags, posts }) => {
   const [q, setQ] = useState("")
 
-  //   .box {
-  //     -ms-overflow-style: none;
-  //     scrollbar-width: none;
-  // }
-  // .box::-webkit-scrollbar {
-  //     display: none;
-  // }
   return (
     <div className="block md:grid grid-cols-12 gap-6">
       <div
@@ -32,8 +25,7 @@ const Feed: React.FC<Props> = ({ categories, tags, posts }) => {
           height: "calc(100vh - 73px)",
         }}
       >
-        {/* <Lists.CategoryList data={categories} /> */}
-        <Lists.TagList data={tags} />
+        {/* <Lists.TagList data={tags} /> */}
       </div>
       <div className="col-span-12 lg:col-span-7">
         <Cards.MobileProfileCard />
@@ -50,8 +42,11 @@ const Feed: React.FC<Props> = ({ categories, tags, posts }) => {
         }}
       >
         <Cards.ProfileCard />
-        <Cards.ServiceCard />
+        <Lists.CategoryList data={categories} />
+        {/* <Lists.TagList data={tags} /> */}
         <Cards.ContactCard />
+        {/* <Cards.ServiceCard /> */}
+
         <Footer className="pt-4" />
       </div>
     </div>
