@@ -9,7 +9,7 @@ type Props = {
 
 const CategoryList: React.FC<Props> = ({ className, data }) => {
   const router = useRouter()
-  const currentTag = router.query.tag || "All"
+  const currentTag = router.query.category || "All"
 
   const handleClickTag = (value: any) => {
     router.push({
@@ -35,7 +35,7 @@ const CategoryList: React.FC<Props> = ({ className, data }) => {
             }`}
             onClick={() => handleClickTag(key)}
           >
-            <a>{key}</a>
+            <a> {`${key} (${data[key]})`}</a>
           </li>
         ))}
       </ul>

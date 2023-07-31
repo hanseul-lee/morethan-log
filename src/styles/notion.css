@@ -14,6 +14,15 @@
   @apply my-1;
 }
 
+.notion-h {
+  width: 100%;
+}
+
+.notion-h-title {
+  @apply text-gray-600 dark:text-gray-600;
+  @apply p-1;
+}
+
 .notion-toggle {
   @apply w-full;
 }
@@ -98,4 +107,8 @@ pre[class*="language-"] {
 
 .notion-hr {
   border-top: 1px solid rgba(55, 53, 47, 0.16);
+}
+
+.notion-table-of-contents > a {
+  @apply text-gray-600 dark:text-gray-300;
 }
